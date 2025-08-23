@@ -22,6 +22,7 @@ if(abs(arr[j])>abs(arr[j+1])){
 int main(){
     int arr[]={-10,5,-3,7,-2};
     int n=sizeof(arr)/sizeof(arr[0]);
+    //int n1=sizeof(arr)/sizeof(arr[0]);
 findnumber(arr,n);
 
 for(int i=0;i<n;i++){

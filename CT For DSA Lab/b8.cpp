@@ -13,7 +13,6 @@ void sortByFrequency(int a[], int n, int freq[]) {
                 a[j] = a[j + 1];
                 a[j + 1] = temp;
             }
-
             // If frequency same, but number[j] > number[j+1], swap
             else if (freq[a[j]] == freq[a[j + 1]] && a[j] > a[j + 1]) {
                 int temp = a[j];

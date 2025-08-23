@@ -16,10 +16,21 @@ void insertionSort(int arr[], int n) {
     }
 }
 
+void bubblesort(int arr[],int n){
+    for(int i=0;i<n-1;i++){
+        for(int j =0;j<n-i-1;j++){
+            arr[j]<arr[j+1];
+            int temp=arr[j];
+            arr[j]=arr[j+1];
+            arr[j+1]=temp;
+        }
+    }
+}
+
 // 2. Function to find kth smallest element
 int findKthSmallest(int arr[], int n, int k) {
-    insertionSort(arr, n);       // Step 1: Sort the array
-    return arr[k - 1];           // Step 2: k-th smallest is at index k-1
+    bubblesort(arr, n);       // Step 1: Sort the array
+    return arr[k-1];           // Step 2: k-th smallest is at index k-1
 }
 
 // 3. Main function to test
@@ -29,7 +40,7 @@ int main() {
     int k = 4;
 
     int result = findKthSmallest(arr, n, k);
-    cout << k << "th smallest element is: " << result << endl;
+    cout << k << "the smallest element is: " << result << endl;
 
     return 0;
 }
