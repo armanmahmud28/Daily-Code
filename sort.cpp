@@ -1,3 +1,4 @@
+
 #include<iostream>
 
 using namespace std;
@@ -27,7 +28,7 @@ void selection_sort(int arr[], int n)
 
         for(int j=i+1; j<n; j++)
         {
-            if(arr[j]<arr[min_idx])
+            if(arr[min_idx]<arr[j])
             {
                 min_idx=j;
             }
@@ -62,11 +63,11 @@ int main()
 {
     int arr[]= {5,4,1,3,2};
 
-    //insertion_sort(arr, 5);
+    insertion_sort(arr, 5);
 
     //selection_sort(arr, 5);
 
-    bubble_sort(arr,5);
+    //bubble_sort(arr,5);
 
 
 

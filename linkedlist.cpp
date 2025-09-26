@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 class Node{
   public:
   int data;
@@ -15,11 +16,11 @@ class Node{
 };
 
 void traverseList(Node* head){
+Node* curr=head;
+    while(curr!=nullptr){
+        cout<<curr<<" ";
 
-    while(head!=nullptr){
-        cout<<head->data<<" ";
-
-        head = head->next;
+        curr = curr->next;
     }
     cout<<endl;
 }
